@@ -1,0 +1,105 @@
+Premier programme
+-----------------
+print("Bienvenue au stage Python!")
+
+
+Commentaires
+------------
+# ceci est un commentaire
+print("Bienvenue au stage Python!")
+
+LES VARIABLES
+-------------
+
+c'est un élément qui permet de stocker temporairement une valeur.
+Ca peut être du texte, un nombre, des caractères, etc..
+
+Les variables ne sont pas figées. Elles peuvent changer, varier lors
+de l'execution du programme.
+
+- trouver un nom (a,b,c,d...)
+- nom utilisateur (règles et conventions)
+- nom_utilisateur (_, minuscule, pas d'accent, .. )
+- nom, age
+
+nom = "Patrick"
+age = 19
+wallet = 125.7
+est_beau = True
+
+# affichage string
+print(nom)
+print(age)
+print(nom, age)
+
+# affichage nombre + opérations
+x = 25
+print(x)
+
+x = x + 1
+print(x)
+
+x = x * 2
+print(x)
+
+x = x / 2
+print(x)
+
+# Pour les chaînes de caractères, deux opérations sont possibles, l’addition et la multiplication :
+nom = "Patrick"
+print(nom)
+nom = "Salut " + nom 
+print(nom)
+nom = nom * 3
+print(nom)
+
+# Conversion des types
+x = 3
+y = "12"
+
+total = x + y # erreur car y est str
+print(total) 
+
+total = x + int(y)
+print(total)
+
+-----------------
+# saisir des valeurs
+nom = input("Quel est ton nom?")
+print(nom)
+
+prenom = input("Quel est ton prenom?")
+print(prenom)
+
+# les différentes façon de print
+nom = "Patrick"
+prenom = "Lesaint"
+
+print("Bonjour " + nom + " " + prenom)
+print(nom, prenom)
+print("Bonjour", nom, prenom)
+print(f"Bonjour {nom} {prenom}") # f string
+
+# avec un nombre
+age = 12
+
+print("Bonjour j'ai " + age + " ans") # erreur
+print("Bonjour j'ai " + str(age) + " ans")
+print("Bonjour j'ai", age, "ans")
+print(f"Bonjour j'ai {age} ans")
+
+EXERCICE 1
+--------- 
+EXERCICE 2
+---------
+EXERCICE 3
+---------
+
+print(min (1 , -2, 4))
+print(max (1 , -2, 4))
+
+EXERCICE = modifier le programme précédent
+pour afficher la meilleure note et la moins bonne note de l'élève
+
+-----
+EXERCICE 4

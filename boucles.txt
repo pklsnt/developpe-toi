@@ -1,0 +1,64 @@
+print("Vous êtes le client n°1)
+print("Vous êtes le client n°2)
+print("Vous êtes le client n°3)
+print("Vous êtes le client n°4)
+
+# for: pour une valeur de départ (1) jusqu'à une valeur de fin (4)
+for client in 1,2,3,4:
+    print(f"Vous êtes le client n°{client}")
+
+for client in 10,20,30,40:
+    print(f"Vous êtes le client n°{client}")
+
+for client in range(1,4):
+    print(f"Vous êtes le client n°{client}")
+
+# for each : pour chaque valeur d'une liste 
+etudiants = ["Alix", "Cyprien", "Nolan"]
+
+for etudiant in etudiants:
+    print(f"Bonjour {etudiant}")
+
+for etudiant in etudiants:
+    if etudiant == "Cyprien":
+        continue
+    print(f"Bonjour {etudiant}")
+
+for etudiant in etudiants:
+    if etudiant == "Cyprien":
+        break
+    print(f"Bonjour {etudiant}")
+
+# while : tant qu'une condition est vraie
+salaire = 1500
+
+for mois in range(1,6):
+    salaire = salaire + 120
+    print(f"Mois {mois}, votre salaire est de {salaire}")
+
+for mois in range(1,6):
+    salaire = salaire + 120
+    print(f"Mois {mois}, votre salaire est de {salaire}")
+    if salaire > 1800:
+        break
+
+# ------
+
+salaire = 1500
+mois = 0
+
+while mois < 5:
+    salaire = salaire + 120
+    print(f"Mois {mois}, votre salaire est de {salaire}")
+    mois = mois + 1
+
+while mois < 5:
+    salaire = salaire + 120
+    print(f"Mois {mois}, votre salaire est de {salaire}")
+    mois = mois + 1
+    if salaire > 1800:
+        break
+
+
+EXERCICE 7 : le juste prix
+----------

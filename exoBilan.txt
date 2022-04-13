@@ -1,0 +1,48 @@
+import random
+
+reponse = random.randint(1, 3)
+choix = int(input("Choisit une jarre : 1, 2, 3"))
+
+if choix == reponse:
+    print("Gagné !")
+else:
+    print("Perdu !")
+
+
+------------------
+
+
+import random
+
+points = 0
+reponse = random.randint(1, 3)
+
+while points != 3:
+    choix = int(input("Choisit une jarre : 1, 2, 3"))
+    if choix == reponse:
+        points += 1
+        print(f"Gagné ! vous avez {points}/3")
+    else:
+        points -= 1
+        print(f"Perdu ! vous avez {points}/3")
+
+print("Tu deviens roi du temple")
+
+------------------
+
+
+import random
+
+vies = 5
+points = 0
+reponse = random.randint(1, 5)
+
+while vies > 0:
+    choix = int(input("Choisit une jarre : 1, 2, 3, 4, 5"))
+    if choix == reponse:
+        points += 10
+        print("Gagné ! vous avez obtenu une clé (", points, "/3) !")
+    else:
+        print("Perdu ! vous tombez dans le piège (", points, "/3) !")
+
+print("Tu deviens roi du temple")

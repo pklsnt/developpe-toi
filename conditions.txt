@@ -1,0 +1,82 @@
+S'il fait beau
+alors je sors
+sinon je reste chez moi
+
+argent = 5000
+prix_ordinateur = 1200
+
+# le prix de l'ordinateur est inférieur à 1000€
+print(prix_ordinateur < 1000)
+print(prix_ordinateur == 1000)
+print(prix_ordinateur >= 1000)
+
+# on regarde si le prix de l'ordinateur est inférieur à 1000€
+if prix_ordinateur < 1000:
+    print("le prix est bien inférieur à 1000€")
+else:
+    print("non le prix est supérieur à 1000€")
+
+# on regarde si
+# - j'ai assez d'argent
+# - le prix de l'ordinateur est inférieur à 1000
+
+if prix_ordinateur <= argent and prix_ordinateur < 1000:
+    print("l'achat est possible")
+else:
+    print("l'achat n'est pas possible")
+
+print(f"il vous reste {argent}")
+
+# on regarde si
+# - j'ai assez d'argent
+# - le prix de l'ordinateur est inférieur à 1000
+# si c'est ok on achète
+
+if prix_ordinateur <= argent and prix_ordinateur < 1000:
+    print("l'achat est possible")
+    argent = argent - prix_ordinateur
+else:
+    print("l'achat n'est pas possible")
+
+print(f"il vous reste {argent}")
+
+# --------
+
+# on regarde si
+# - j'ai assez d'argent
+# - le prix de l'ordinateur est inférieur à 1000
+# si c'est ok on achète
+# sinon on affiche pourquoi
+
+if prix_ordinateur > argent:
+    print("vous n'avez pas assez d'argent")
+elif prix_ordinateur >= 1000:
+    print("l'ordinateur est trop cher")
+else:
+    print("l'achat est pas possible")
+    argent = argent - prix_ordinateur
+
+print(f"il vous reste {argent}")
+
+
+EXERCICE 5 : mot de passe
+__________
+
+a = 20
+
+if a < 10:
+    print("a est inférieur à 10")
+elif a >= 10 and a < 20:
+#elif 10 <= a < 20:
+    print("a est entre 10 et 19")
+else:
+    print("a est supérieur à 20")
+
+
+EXERCICE 6 : cinéma
+__________
+
+
+
+
+
