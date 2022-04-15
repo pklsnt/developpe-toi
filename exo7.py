@@ -30,7 +30,7 @@ while gagne == False:
         print("C'est moins")
 
     # si le prix de joueur est inférieur au prix à trouver
-    elif reponse < prix:
+    else:
         print("C'est plus")
 
 # fin du jeu après la boucle

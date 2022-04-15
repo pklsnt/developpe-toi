@@ -1,0 +1,68 @@
+Liste de courses
+- oeufs
+- lait
+- pain
+- eau
+
+parcourrir, ajouter, supprimer
+
+# liste qui stocker les noms des étudiants
+etudiants = ["Cyprien", "Nolan", "Alix", "Léa"]
+
+print(etudiants)
+print(etudiants[0]) # on part de 0
+print(etudiants[1])
+
+# afficher le dernier element
+print(etudiants[2])
+print(etudiants[len(etudiants) - 1])
+
+# changer un element
+etudiants[0] = "Cyp"
+print(etudiants)
+
+# inserer un element
+etudiants.insert(2, "Jules")
+print(etudiants)
+
+# afficher des elements
+print(etudiants[1:3]) # ['Nolan', 'Alix']
+
+# remplacer des elements
+etudiants[1:3] = ["Paul", "Jacques"]
+print(etudiants)
+
+# ajouter en bout de liste
+etudiants.append("Corentin")
+print(etudiants)
+
+# supprimer un element
+del etudiants[1]
+print(etudiants)
+
+etudiants.pop(1)
+print(etudiants)
+
+etudiants.remove("Nolan")
+print(etudiants)
+
+# vider toute la liste
+etudiants.clear()
+print(etudiants)
+
+# generer une liste d'entier
+print(list(range(0, 8)))
+print(list(range(8)))
+print(list(range(1, 8)))
+
+# --------
+
+notes = [12, 5, 9 , 8, 17]
+moyenne = 0
+for note in notes:
+    print(notes)
+
+# multiple d'un nombre
+% modulo
+print(9%3)
+print(8%3)

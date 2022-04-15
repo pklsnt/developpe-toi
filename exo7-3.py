@@ -35,7 +35,7 @@ while gagne == False:
         print(f"C'est moins ! il vous reste {3 - nb_coup} essais")
 
     # si le prix de joueur est inférieur au prix à trouver
-    elif reponse < prix:
+    else:
         print(f"C'est plus ! il vous reste {3 - nb_coup} essais")
 
     if nb_coup == 3:
