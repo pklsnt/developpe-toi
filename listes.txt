@@ -55,6 +55,12 @@ print(list(range(0, 8)))
 print(list(range(8)))
 print(list(range(1, 8)))
 
+notes = [12, 8, 15]
+
+for etudiant in etudiants:
+    print(etudiant)
+
+
 # --------
 
 notes = [12, 5, 9 , 8, 17]
